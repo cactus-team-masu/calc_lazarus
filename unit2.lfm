@@ -1,0 +1,352 @@
+object Form_engin: TForm_engin
+  Left = 1155
+  Height = 441
+  Top = 402
+  Width = 732
+  Caption = 'Form_engin'
+  ClientHeight = 421
+  ClientWidth = 732
+  Menu = MainMenu1
+  LCLVersion = '2.0.10.0'
+  object Edit1: TEdit
+    Left = 32
+    Height = 55
+    Top = 8
+    Width = 680
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -35
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button_1: TButton
+    Left = 24
+    Height = 39
+    Top = 216
+    Width = 78
+    Caption = '1'
+    OnClick = ButtonClick
+    TabOrder = 1
+  end
+  object Button_2: TButton
+    Left = 104
+    Height = 39
+    Top = 216
+    Width = 78
+    Caption = '2'
+    OnClick = ButtonClick
+    TabOrder = 2
+  end
+  object Button_3: TButton
+    Left = 184
+    Height = 39
+    Top = 216
+    Width = 78
+    Caption = '3'
+    OnClick = ButtonClick
+    TabOrder = 3
+  end
+  object Button_4: TButton
+    Left = 24
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = '4'
+    OnClick = ButtonClick
+    TabOrder = 4
+  end
+  object Button_5: TButton
+    Left = 104
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = '5'
+    OnClick = ButtonClick
+    TabOrder = 5
+  end
+  object Button_6: TButton
+    Left = 184
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = '6'
+    OnClick = ButtonClick
+    TabOrder = 6
+  end
+  object Button_7: TButton
+    Left = 24
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = '7'
+    OnClick = ButtonClick
+    TabOrder = 7
+  end
+  object Button_8: TButton
+    Left = 104
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = '8'
+    OnClick = ButtonClick
+    TabOrder = 8
+  end
+  object Button_9: TButton
+    Left = 184
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = '9'
+    OnClick = ButtonClick
+    TabOrder = 9
+  end
+  object Button_changing_sign: TButton
+    Left = 24
+    Height = 39
+    Top = 360
+    Width = 78
+    Caption = '+/-'
+    OnClick = Button_changing_signClick
+    TabOrder = 10
+  end
+  object Button_0: TButton
+    Left = 104
+    Height = 39
+    Top = 360
+    Width = 78
+    Caption = '0'
+    OnClick = ButtonClick
+    TabOrder = 11
+  end
+  object Button_dot: TButton
+    Left = 184
+    Height = 39
+    Top = 360
+    Width = 78
+    Caption = '.'
+    TabOrder = 12
+  end
+  object Button_cos: TButton
+    Left = 368
+    Height = 39
+    Top = 216
+    Width = 78
+    Caption = 'cos'
+    TabOrder = 13
+  end
+  object Button_sin: TButton
+    Left = 368
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = 'sin'
+    TabOrder = 14
+  end
+  object Button_tg: TButton
+    Left = 368
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = 'tg'
+    TabOrder = 15
+  end
+  object Button_ctg: TButton
+    Left = 368
+    Height = 39
+    Top = 360
+    Width = 78
+    Caption = 'ctg'
+    TabOrder = 16
+  end
+  object Button_abs: TButton
+    Left = 584
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = 'abs'
+    OnClick = Button_sumClick
+    TabOrder = 17
+  end
+  object Button_factorial: TButton
+    Left = 456
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = 'factorial'
+    OnClick = Button_factorialClick
+    TabOrder = 18
+  end
+  object Button_stepen: TButton
+    Left = 456
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = 'x^y'
+    OnClick = Button_stepenClick
+    TabOrder = 19
+  end
+  object Button_ln_10: TButton
+    Left = 584
+    Height = 39
+    Top = 360
+    Width = 78
+    Caption = 'ln_10'
+    OnClick = Button_ln_10Click
+    TabOrder = 20
+  end
+  object Button_percent: TButton
+    Left = 456
+    Height = 39
+    Top = 216
+    Width = 78
+    Caption = '%'
+    OnClick = Button_percentClick
+    TabOrder = 21
+  end
+  object Button_squaring: TButton
+    Left = 104
+    Height = 39
+    Top = 168
+    Width = 78
+    Caption = '^2'
+    OnClick = Button_squaringClick
+    TabOrder = 22
+  end
+  object Button_sqrt: TButton
+    Left = 184
+    Height = 39
+    Top = 168
+    Width = 78
+    Caption = 'sqrt'
+    OnClick = Button_sqrtClick
+    TabOrder = 23
+  end
+  object Button_division: TButton
+    Left = 264
+    Height = 39
+    Top = 168
+    Width = 78
+    Caption = '/'
+    OnClick = Button_sumClick
+    TabOrder = 24
+  end
+  object Button_multipl: TButton
+    Left = 264
+    Height = 39
+    Top = 216
+    Width = 78
+    Caption = '*'
+    OnClick = Button_sumClick
+    TabOrder = 25
+  end
+  object Button_diff: TButton
+    Left = 264
+    Height = 39
+    Top = 264
+    Width = 78
+    Caption = '-'
+    OnClick = Button_sumClick
+    TabOrder = 26
+  end
+  object Button_sum: TButton
+    Left = 264
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = '+'
+    OnClick = Button_sumClick
+    TabOrder = 27
+  end
+  object Button_equally: TButton
+    Left = 264
+    Height = 39
+    Top = 360
+    Width = 78
+    Caption = '='
+    OnClick = Button_equallyClick
+    TabOrder = 28
+  end
+  object Button_ce: TButton
+    Left = 288
+    Height = 39
+    Top = 120
+    Width = 78
+    Caption = 'ce'
+    OnClick = Button_ceClick
+    TabOrder = 29
+  end
+  object Button_c: TButton
+    Left = 368
+    Height = 39
+    Top = 120
+    Width = 78
+    Caption = 'c'
+    OnClick = Button_cClick
+    TabOrder = 30
+  end
+  object Button_del: TButton
+    Left = 448
+    Height = 39
+    Top = 120
+    Width = 78
+    Caption = 'del'
+    OnClick = Button_delClick
+    TabOrder = 31
+  end
+  object Button_ln_e: TButton
+    Left = 584
+    Height = 39
+    Top = 312
+    Width = 78
+    Caption = 'ln_e'
+    OnClick = Button_ln_eClick
+    TabOrder = 32
+  end
+  object MainMenu1: TMainMenu
+    Left = 680
+    Top = 72
+    object M_1_calc: TMenuItem
+      Caption = 'M_1_calc'
+      object M_1_copy: TMenuItem
+        Caption = 'M_1_copy'
+      end
+      object M_1_paste: TMenuItem
+        Caption = 'M_1_paste'
+      end
+    end
+    object M_2_mode: TMenuItem
+      Caption = 'M_2_mode'
+      object M_2_type: TMenuItem
+        Caption = 'M_2_type'
+        object M_base: TMenuItem
+          Caption = 'M_base'
+          OnClick = M_baseClick
+        end
+        object M_engin: TMenuItem
+          Caption = 'M_engin'
+        end
+      end
+      object M_2_lang: TMenuItem
+        Caption = 'M_2_lang'
+        object M_rus: TMenuItem
+          Caption = 'M_rus'
+        end
+        object M_eng: TMenuItem
+          Caption = 'M_eng'
+        end
+      end
+    end
+    object M_3_help: TMenuItem
+      Caption = 'M_3_help'
+      object M_3_1_help: TMenuItem
+        Caption = 'M_3_1_help'
+      end
+      object M_3_1_about: TMenuItem
+        Caption = 'M_3_1_about'
+      end
+    end
+  end
+end
