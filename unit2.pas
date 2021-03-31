@@ -127,9 +127,9 @@ end;
 //function pow(a,x:real):real;              //эээ
 //var t:real;i:integer;
 //begin
- // t:=a;
-  //for i:=1 to x-1 do t:=t*a;
-  //pow:=t;
+// t:=a;
+//for i:=1 to x-1 do t:=t*a;
+//pow:=t;
 //end;
 procedure TForm_engin.Button_equallyClick(Sender: TObject);
 begin
