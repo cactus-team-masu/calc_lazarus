@@ -5,38 +5,30 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
+  Buttons;
 
 type
 
   { TForm_base }
 
   TForm_base = class(TForm)
-    Button_ce: TButton;
-    Button_c: TButton;
-    Button_del: TButton;
-    Button_percent: TButton;
-    Button_squaring: TButton;
-    Button_sqrt: TButton;
-    Button_division: TButton;
-    Button_multipl: TButton;
-    Button_diff: TButton;
-    Button_sum: TButton;
-    Button_equally: TButton;
-    Button_1: TButton;
-    Button_changing_sign: TButton;
-    Button_0: TButton;
-    Button_dot: TButton;
-    Button_2: TButton;
-    Button_3: TButton;
-    Button_4: TButton;
-    Button_5: TButton;
-    Button_6: TButton;
-    Button_7: TButton;
-    Button_8: TButton;
-    Button_9: TButton;
+    Button_dot: TSpeedButton;
+    Button_changing_sign: TSpeedButton;
+    Button_ce: TSpeedButton;
+    Button_c: TSpeedButton;
+    Button_del: TSpeedButton;
+    Button_division: TSpeedButton;
+    Button_multipl: TSpeedButton;
+    Button_diff: TSpeedButton;
+    Button_sum: TSpeedButton;
+    Button_equally: TSpeedButton;
     Edit1: TEdit;
     MainMenu1: TMainMenu;
+    Menu_theme_3: TMenuItem;
+    Menu_theme_2: TMenuItem;
+    Menu_theme_1: TMenuItem;
+    Menu_themes: TMenuItem;
     Menu_base: TMenuItem;
     Menu_engin: TMenuItem;
     Menu_rus: TMenuItem;
@@ -50,6 +42,19 @@ type
     Menu_2_2_lang: TMenuItem;
     Menu_3_1_help: TMenuItem;
     Menu_3_2_about: TMenuItem;
+    Button_0: TSpeedButton;
+    Button_2: TSpeedButton;
+    Button_3: TSpeedButton;
+    Button_4: TSpeedButton;
+    Button_5: TSpeedButton;
+    Button_6: TSpeedButton;
+    Button_7: TSpeedButton;
+    Button_8: TSpeedButton;
+    Button_9: TSpeedButton;
+    Button_percent: TSpeedButton;
+    Button_1: TSpeedButton;
+    Button_squaring: TSpeedButton;
+    Button_sqrt: TSpeedButton;
     procedure ButtonClick(Sender: TObject);
     procedure Button_cClick(Sender: TObject);
     procedure Button_ceClick(Sender: TObject);
@@ -57,6 +62,8 @@ type
     procedure Button_delClick(Sender: TObject);
     procedure Button_dotClick(Sender: TObject);
     procedure Button_equallyClick(Sender: TObject);
+    procedure Button_percent1Click(Sender: TObject);
+    procedure Button_percentClick(Sender: TObject);
     procedure Button_sqrtClick(Sender: TObject);
     procedure Button_squaringClick(Sender: TObject);
     procedure Button_sumClick(Sender: TObject);
@@ -99,8 +106,8 @@ end;
 
 procedure TForm_base.ButtonClick(Sender: TObject);    //кнопки цифр
 begin
-  if Edit1.Text = '0' then Edit1.Text:=(Sender as TButton).Caption
-  else Edit1.Text:=Edit1.Text + (Sender as TButton).Caption;
+  if Edit1.Text = '0' then Edit1.Text:=(Sender as TSpeedButton).Caption
+  else Edit1.Text:=Edit1.Text + (Sender as TSpeedButton).Caption;
   //x:=strtofloat(Edit1.Text);
 end;
 
@@ -109,7 +116,7 @@ begin
   if Edit1.Text<>'' then begin
                           x:= StrToFloat(Edit1.Text);//забрать первое значение
                           Edit1.Clear;
-                          sign:=(Sender as TButton).Caption;
+                          sign:=(Sender as TSpeedButton).Caption;
                         end;
 end;
 
@@ -122,11 +129,22 @@ begin
                               '+': z:=x+y;
                               '-': z:=x-y;
                               '*': z:=x*y;
-                              '/': z:=x/y;
-                              'abs':z:=x;
+                              '/': if y<>0 then z:=x/y else Label1.Caption := 'No';
                             end;
                             Edit1.Text:=FloatToStr(z);
                         end;
+end;
+
+procedure TForm_base.Button_percent1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm_base.Button_percentClick(Sender: TObject);
+begin
+  y:=strtofloat(Edit1.Text);
+  z:=x/100*y;
+  Edit1.Text:=floattostr(z);
 end;
 
 procedure TForm_base.Button_cClick(Sender: TObject);

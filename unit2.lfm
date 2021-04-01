@@ -1,10 +1,10 @@
 object Form_engin: TForm_engin
-  Left = 1155
-  Height = 441
-  Top = 402
+  Left = 1057
+  Height = 437
+  Top = 161
   Width = 732
   Caption = 'Form_engin'
-  ClientHeight = 421
+  ClientHeight = 417
   ClientWidth = 732
   Menu = MainMenu1
   LCLVersion = '2.0.10.0'
@@ -22,288 +22,298 @@ object Form_engin: TForm_engin
     ParentFont = False
     TabOrder = 0
   end
-  object Button_1: TButton
-    Left = 24
-    Height = 39
-    Top = 216
+  object Button_squaring: TSpeedButton
+    Left = 120
+    Height = 34
+    Top = 200
+    Width = 78
+    Caption = '^2'
+    OnClick = Button_squaringClick
+  end
+  object Button_1: TSpeedButton
+    Left = 40
+    Height = 34
+    Top = 240
     Width = 78
     Caption = '1'
     OnClick = ButtonClick
-    TabOrder = 1
   end
-  object Button_2: TButton
-    Left = 104
-    Height = 39
-    Top = 216
+  object Button_sqrt: TSpeedButton
+    Left = 200
+    Height = 34
+    Top = 200
+    Width = 78
+    Caption = 'sqrt'
+    OnClick = Button_sqrtClick
+  end
+  object Button_2: TSpeedButton
+    Left = 120
+    Height = 34
+    Top = 240
     Width = 78
     Caption = '2'
     OnClick = ButtonClick
-    TabOrder = 2
   end
-  object Button_3: TButton
-    Left = 184
-    Height = 39
-    Top = 216
+  object Button_3: TSpeedButton
+    Left = 200
+    Height = 34
+    Top = 240
     Width = 78
     Caption = '3'
     OnClick = ButtonClick
-    TabOrder = 3
   end
-  object Button_4: TButton
-    Left = 24
-    Height = 39
-    Top = 264
+  object Button_4: TSpeedButton
+    Left = 40
+    Height = 34
+    Top = 280
     Width = 78
     Caption = '4'
     OnClick = ButtonClick
-    TabOrder = 4
   end
-  object Button_5: TButton
-    Left = 104
-    Height = 39
-    Top = 264
+  object Button_5: TSpeedButton
+    Left = 120
+    Height = 34
+    Top = 280
     Width = 78
     Caption = '5'
     OnClick = ButtonClick
-    TabOrder = 5
   end
-  object Button_6: TButton
-    Left = 184
-    Height = 39
-    Top = 264
+  object Button_6: TSpeedButton
+    Left = 200
+    Height = 34
+    Top = 280
     Width = 78
     Caption = '6'
     OnClick = ButtonClick
-    TabOrder = 6
   end
-  object Button_7: TButton
-    Left = 24
-    Height = 39
-    Top = 312
+  object Button_7: TSpeedButton
+    Left = 40
+    Height = 34
+    Top = 320
     Width = 78
     Caption = '7'
     OnClick = ButtonClick
-    TabOrder = 7
   end
-  object Button_8: TButton
-    Left = 104
-    Height = 39
-    Top = 312
+  object Button_8: TSpeedButton
+    Left = 120
+    Height = 34
+    Top = 320
     Width = 78
     Caption = '8'
     OnClick = ButtonClick
-    TabOrder = 8
   end
-  object Button_9: TButton
-    Left = 184
-    Height = 39
-    Top = 312
+  object Button_9: TSpeedButton
+    Left = 200
+    Height = 34
+    Top = 320
     Width = 78
     Caption = '9'
     OnClick = ButtonClick
-    TabOrder = 9
   end
-  object Button_changing_sign: TButton
-    Left = 24
-    Height = 39
-    Top = 360
-    Width = 78
-    Caption = '+/-'
-    OnClick = Button_changing_signClick
-    TabOrder = 10
-  end
-  object Button_0: TButton
-    Left = 104
-    Height = 39
+  object Button_0: TSpeedButton
+    Left = 120
+    Height = 34
     Top = 360
     Width = 78
     Caption = '0'
     OnClick = ButtonClick
-    TabOrder = 11
   end
-  object Button_dot: TButton
-    Left = 184
-    Height = 39
+  object Button_changing_sign: TSpeedButton
+    Left = 40
+    Height = 34
+    Top = 360
+    Width = 78
+    Caption = '+/-'
+    OnClick = Button_changing_signClick
+  end
+  object Button_dot: TSpeedButton
+    Left = 200
+    Height = 34
     Top = 360
     Width = 78
     Caption = '.'
-    TabOrder = 12
+    OnClick = Button_dotClick
   end
-  object Button_cos: TButton
-    Left = 368
-    Height = 39
-    Top = 216
-    Width = 78
-    Caption = 'cos'
-    TabOrder = 13
-  end
-  object Button_sin: TButton
-    Left = 368
-    Height = 39
-    Top = 264
-    Width = 78
-    Caption = 'sin'
-    TabOrder = 14
-  end
-  object Button_tg: TButton
-    Left = 368
-    Height = 39
-    Top = 312
-    Width = 78
-    Caption = 'tg'
-    TabOrder = 15
-  end
-  object Button_ctg: TButton
-    Left = 368
-    Height = 39
-    Top = 360
-    Width = 78
-    Caption = 'ctg'
-    TabOrder = 16
-  end
-  object Button_abs: TButton
-    Left = 584
-    Height = 39
-    Top = 264
-    Width = 78
-    Caption = 'abs'
-    OnClick = Button_sumClick
-    TabOrder = 17
-  end
-  object Button_factorial: TButton
-    Left = 456
-    Height = 39
-    Top = 264
-    Width = 78
-    Caption = 'factorial'
-    OnClick = Button_factorialClick
-    TabOrder = 18
-  end
-  object Button_stepen: TButton
-    Left = 456
-    Height = 39
-    Top = 312
-    Width = 78
-    Caption = 'x^y'
-    OnClick = Button_stepenClick
-    TabOrder = 19
-  end
-  object Button_ln_10: TButton
-    Left = 584
-    Height = 39
-    Top = 360
-    Width = 78
-    Caption = 'ln_10'
-    OnClick = Button_ln_10Click
-    TabOrder = 20
-  end
-  object Button_percent: TButton
-    Left = 456
-    Height = 39
-    Top = 216
-    Width = 78
-    Caption = '%'
-    OnClick = Button_percentClick
-    TabOrder = 21
-  end
-  object Button_squaring: TButton
-    Left = 104
-    Height = 39
-    Top = 168
-    Width = 78
-    Caption = '^2'
-    OnClick = Button_squaringClick
-    TabOrder = 22
-  end
-  object Button_sqrt: TButton
-    Left = 184
-    Height = 39
-    Top = 168
-    Width = 78
-    Caption = 'sqrt'
-    OnClick = Button_sqrtClick
-    TabOrder = 23
-  end
-  object Button_division: TButton
-    Left = 264
-    Height = 39
-    Top = 168
+  object Button_division: TSpeedButton
+    Left = 288
+    Height = 34
+    Top = 200
     Width = 78
     Caption = '/'
     OnClick = Button_sumClick
-    TabOrder = 24
   end
-  object Button_multipl: TButton
-    Left = 264
-    Height = 39
-    Top = 216
+  object Button_multipl: TSpeedButton
+    Left = 288
+    Height = 34
+    Top = 240
     Width = 78
     Caption = '*'
     OnClick = Button_sumClick
-    TabOrder = 25
   end
-  object Button_diff: TButton
-    Left = 264
-    Height = 39
-    Top = 264
+  object Button_diff: TSpeedButton
+    Left = 288
+    Height = 34
+    Top = 280
     Width = 78
     Caption = '-'
     OnClick = Button_sumClick
-    TabOrder = 26
   end
-  object Button_sum: TButton
-    Left = 264
-    Height = 39
-    Top = 312
+  object Button_sum: TSpeedButton
+    Left = 288
+    Height = 34
+    Top = 320
     Width = 78
     Caption = '+'
     OnClick = Button_sumClick
-    TabOrder = 27
   end
-  object Button_equally: TButton
-    Left = 264
-    Height = 39
+  object Button_equally: TSpeedButton
+    Left = 288
+    Height = 34
     Top = 360
     Width = 78
     Caption = '='
     OnClick = Button_equallyClick
-    TabOrder = 28
   end
-  object Button_ce: TButton
-    Left = 288
-    Height = 39
-    Top = 120
+  object Button_ce: TSpeedButton
+    Left = 192
+    Height = 34
+    Top = 136
     Width = 78
     Caption = 'ce'
     OnClick = Button_ceClick
-    TabOrder = 29
   end
-  object Button_c: TButton
-    Left = 368
-    Height = 39
-    Top = 120
+  object Button_c: TSpeedButton
+    Left = 272
+    Height = 34
+    Top = 136
     Width = 78
     Caption = 'c'
     OnClick = Button_cClick
-    TabOrder = 30
   end
-  object Button_del: TButton
-    Left = 448
-    Height = 39
-    Top = 120
+  object Button_del: TSpeedButton
+    Left = 352
+    Height = 34
+    Top = 136
     Width = 78
     Caption = 'del'
     OnClick = Button_delClick
-    TabOrder = 31
   end
-  object Button_ln_e: TButton
-    Left = 584
-    Height = 39
-    Top = 312
+  object Button_percent: TSpeedButton
+    Left = 40
+    Height = 34
+    Top = 200
+    Width = 78
+    Caption = '%'
+    OnClick = Button_percentClick
+  end
+  object Button_abs: TSpeedButton
+    Left = 384
+    Height = 34
+    Top = 200
+    Width = 78
+    Caption = 'abs'
+    OnClick = Button_absClick
+  end
+  object Button_ln_e: TSpeedButton
+    Left = 384
+    Height = 34
+    Top = 240
     Width = 78
     Caption = 'ln_e'
     OnClick = Button_ln_eClick
-    TabOrder = 32
+  end
+  object Button_ln_10: TSpeedButton
+    Left = 384
+    Height = 34
+    Top = 280
+    Width = 78
+    Caption = 'ln_10'
+    OnClick = Button_ln_10Click
+  end
+  object Button_factorial: TSpeedButton
+    Left = 384
+    Height = 34
+    Top = 320
+    Width = 78
+    Caption = 'factorial'
+    OnClick = Button_factorialClick
+  end
+  object Button_stepen: TSpeedButton
+    Left = 384
+    Height = 34
+    Top = 360
+    Width = 78
+    Caption = 'x^y'
+    OnClick = Button_stepenClick
+  end
+  object Button_cos: TSpeedButton
+    Left = 472
+    Height = 34
+    Top = 200
+    Width = 78
+    Caption = 'cos'
+    OnClick = Button_cosClick
+  end
+  object Button_sin: TSpeedButton
+    Left = 472
+    Height = 34
+    Top = 240
+    Width = 78
+    Caption = 'sin'
+    OnClick = Button_sinClick
+  end
+  object Button_tg: TSpeedButton
+    Left = 472
+    Height = 34
+    Top = 280
+    Width = 78
+    Caption = 'tg'
+    OnClick = Button_tgClick
+  end
+  object Button_ctg: TSpeedButton
+    Left = 472
+    Height = 34
+    Top = 320
+    Width = 78
+    Caption = 'ctg'
+    OnClick = Button_ctgClick
+  end
+  object Label1: TLabel
+    Left = 394
+    Height = 1
+    Top = 80
+    Width = 1
+    ParentColor = False
+  end
+  object Button_s2: TSpeedButton
+    Left = 600
+    Height = 34
+    Top = 200
+    Width = 78
+    Caption = 'Двоичная'
+    OnClick = Button_s2Click
+  end
+  object Label2: TLabel
+    Left = 589
+    Height = 15
+    Top = 174
+    Width = 112
+    Caption = 'Системы счисления'
+    ParentColor = False
+  end
+  object Button_s3: TSpeedButton
+    Left = 600
+    Height = 34
+    Top = 240
+    Width = 78
+    Caption = 'Троичная'
+  end
+  object Button_s10: TSpeedButton
+    Left = 600
+    Height = 34
+    Top = 280
+    Width = 78
+    Caption = 'Десятичная'
   end
   object MainMenu1: TMainMenu
     Left = 680
@@ -336,6 +346,18 @@ object Form_engin: TForm_engin
         end
         object M_eng: TMenuItem
           Caption = 'M_eng'
+        end
+      end
+      object Menu_themes: TMenuItem
+        Caption = 'Menu_themes'
+        object M_theme_1: TMenuItem
+          Caption = 'M_theme_1'
+        end
+        object M_theme_2: TMenuItem
+          Caption = 'M_theme_2'
+        end
+        object M_theme_3: TMenuItem
+          Caption = 'M_theme_3'
         end
       end
     end
